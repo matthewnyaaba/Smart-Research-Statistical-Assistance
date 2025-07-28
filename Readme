@@ -1,0 +1,56 @@
+Highlights
+src/ → all core logic for analysis, visualization, and OpenAI integration
+
+ui/ → Streamlit or Flask UI pages (modular)
+
+data/sample_datasets/ → example datasets for demo/testing
+
+assets/ → branding, CSS customization, logo, etc.
+
+tests/ → unit tests for functions (can use pytest)
+
+docs/ → for documenting how to use or contribute to the app
+
+🛠️ Key Files Explained
+File	Purpose
+requirements.txt	All Python dependencies (e.g., pandas, streamlit, openai, statsmodels, etc.)
+app.py	Main entry point to run the app
+LICENSE	Choose MIT for open monetization freedom
+README.md	High-level overview, features, how to run the app
+settings.py	Store your OpenAI API key, config flags (load with .env later)
+
+🔐 Sample requirements.txt
+txt
+Copy
+Edit
+streamlit
+pandas
+scipy
+statsmodels
+matplotlib
+seaborn
+openai
+plotly
+pyreadstat
+pyreadr
+scikit-learn
+📝 Sample README.md Sections
+markdown
+Copy
+Edit
+# 📊 Smart Research Statistics Assistant (SRSA)
+
+SRSA is an AI-powered app that helps researchers analyze data, run statistical tests, visualize surveys, and generate publication-ready outputs in APA format — with plain-English explanations.
+
+## ✨ Features
+- Upload SPSS, Excel, R, or CSV files
+- Auto-clean & check statistical assumptions
+- Run t-tests, ANOVA, Chi-square, regression
+- Auto-generate APA-style outputs
+- Visualize survey data (Likert, bar, pie)
+- AI-generated interpretations using OpenAI
+
+## 🚀 Run the App
+```bash
+pip install -r requirements.txt
+streamlit run app.py
