@@ -1,0 +1,53 @@
+srsa-app/
+│
+├── 📄 README.md
+├── 📄 LICENSE
+├── 📄 requirements.txt
+├── 📄 .gitignore
+├── 📄 app.py
+│
+├── 📁 data/
+│   └── sample_datasets/
+│       ├── survey_sample.xlsx
+│       ├── research_data.csv
+│       └── example_SPSS.sav
+│
+├── 📁 src/
+│   ├── __init__.py
+│   ├── preprocessing.py         # Data cleaning, missing values, assumptions
+│   ├── stats_analysis.py        # t-tests, ANOVA, Chi-square, regression
+│   ├── survey_visuals.py        # Bar charts, Likert plots, pie charts
+│   ├── output_generator.py      # APA-style formatting of results
+│   └── ai_explainer.py          # OpenAI calls for interpretation
+│
+├── 📁 ui/
+│   ├── home.py                  # Landing page layout
+│   ├── upload.py                # Upload interface
+│   ├── analysis.py              # Statistical test interface
+│   ├── visualization.py         # Survey visualization interface
+│   └── export.py                # Exporting results / PDF reports
+│
+├── 📁 assets/
+│   ├── logo.png
+│   ├── favicon.ico
+│   └── css/
+│       └── custom_style.css
+│
+├── 📁 utils/
+│   ├── file_loader.py           # Handle Excel, CSV, SPSS, R files
+│   ├── validators.py            # Check for numeric/categorical vars
+│   └── helpers.py               # Misc helpers (e.g., value labeling)
+│
+├── 📁 config/
+│   ├── settings.py              # API keys, environment settings
+│   └── test_config.py
+│
+├── 📁 tests/
+│   ├── test_stats_analysis.py
+│   ├── test_preprocessing.py
+│   └── test_ai_explainer.py
+│
+└── 📁 docs/
+    ├── USER_GUIDE.md
+    ├── DEV_GUIDE.md
+    └── architecture_diagram.png
